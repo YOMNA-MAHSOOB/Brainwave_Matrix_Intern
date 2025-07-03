@@ -21,3 +21,7 @@
     3-Too long / confusing
     4-Suspicious characters [@, %, =, & in the middle of the link]
     5-No HTTPS : [ http:// instead of https:// ]
+
+## How to run:
+
+     python3 GUI.py
