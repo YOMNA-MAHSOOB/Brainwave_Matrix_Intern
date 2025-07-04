@@ -21,17 +21,26 @@ def Misspelled_domains(url):
     trusted_domains = ["google.com", "facebook.com", "microsoft.com", "amazon.com", "youtube.com"]
     domain= urlparse(url).netloc.lower()
     domain = domain.replace("www.", "")
-    matches=difflib.get_close_matches(domain, trusted_domains,n=1, cutoff=0.8)
-    return len(matches)> 0 and domain not in trusted_domains
+    if domain in trusted_domains:
+     return False  # it's safe
+    close_matches = difflib.get_close_matches(domain, trusted_domains, n=1, cutoff=0.8)
+    return len(close_matches) > 0
+
 # 3
 def long_url(url):
     return len(url)>100
 
 # 4
 def contains_Suspicious_characters(url):
-    return any(char in url for char in ['@', '%', '=', '&'])
+    return any(char in url for char in ['@', '%', '&'])
 # 5
 def has_https(url):
     return url.startswith("https://")
 
 
+# examples to try:
+#https://www.amazon.com/products : safe link
+#g :safe link
+#http://free-youtube.xyz : phishing link
+#http://faceb00k.net/reset : phishing link
+#http://192.168.0.1/login : phishing link
