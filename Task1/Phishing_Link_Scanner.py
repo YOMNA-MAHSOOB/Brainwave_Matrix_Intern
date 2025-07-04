@@ -40,7 +40,7 @@ def has_https(url):
 
 # examples to try:
 #https://www.amazon.com/products : safe link
-#g :safe link
+#https://facebook.com/login :safe link
 #http://free-youtube.xyz : phishing link
 #http://faceb00k.net/reset : phishing link
 #http://192.168.0.1/login : phishing link
