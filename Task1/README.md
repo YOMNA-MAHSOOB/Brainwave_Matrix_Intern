@@ -1,6 +1,7 @@
 # phishing link :
     
-    A fake or malicious URL that tricks people into clicking it to steal sensitive information like passwords, credit card numbers, or login credentials.
+    A fake or malicious URL that tricks people into clicking it to steal 
+    sensitive information like passwords, credit card numbers, or login credentials.
 
 ## Why is it dangerous?
 
