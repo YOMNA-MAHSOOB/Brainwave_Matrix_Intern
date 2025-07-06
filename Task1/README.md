@@ -25,4 +25,6 @@
 
 ## How to run:
 
+     clone the repo then open the   terminal and write:
      python3 GUI.py
+     
