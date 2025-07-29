@@ -1,0 +1,9 @@
+Scanned File:
+ - os.system   [High Risk]
+ - subprocess   [High Risk]
+
+--- Runtime Info ---
+PID: 10885
+CPU Usage: 6.0%
+Memory Usage: 0.00 MB
+No suspicious subprocesses detected.
